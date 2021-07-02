@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.7.1 on darwin)" generated="20210703 03:43:37.327" rpa="false" schemaversion="2">
+<suite id="s1" name="LoginFailed" source="/Users/kittin/Desktop/robot_framework_test/LoginFailed.robot">
+<test id="s1-t1" name="1. Open the website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210703 03:43:37.990" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
+<status status="PASS" starttime="20210703 03:43:37.987" endtime="20210703 03:43:53.018"/>
+</kw>
+<status status="PASS" starttime="20210703 03:43:37.986" endtime="20210703 03:43:53.019"/>
+</test>
+<test id="s1-t2" name="2. Input Username">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>xxxxxxxxx</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210703 03:43:53.024" level="INFO">Typing text 'xxxxxxxxx' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20210703 03:43:53.023" endtime="20210703 03:43:53.210"/>
+</kw>
+<status status="PASS" starttime="20210703 03:43:53.021" endtime="20210703 03:43:53.211"/>
+</test>
+<test id="s1-t3" name="3. Input Password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>xxxxxxxxx</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210703 03:43:53.213" level="INFO">Typing text 'xxxxxxxxx' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20210703 03:43:53.213" endtime="20210703 03:43:53.313"/>
+</kw>
+<status status="PASS" starttime="20210703 03:43:53.212" endtime="20210703 03:43:53.313"/>
+</test>
+<test id="s1-t4" name="4. Click Login button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class="radius"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210703 03:43:53.315" level="INFO">Clicking element '//button[@class="radius"]'.</msg>
+<status status="PASS" starttime="20210703 03:43:53.315" endtime="20210703 03:43:58.050"/>
+</kw>
+<status status="PASS" starttime="20210703 03:43:53.314" endtime="20210703 03:43:58.050"/>
+</test>
+<status status="PASS" starttime="20210703 03:43:37.340" endtime="20210703 03:43:58.052"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="LoginFailed">LoginFailed</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
